@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/back_donate_"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/nameTestDonateAdaptorMine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text=""/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.6">
+
+                    <ImageView
+                        android:id="@+id/bookImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/book_svg"
+                        android:layout_marginBottom="5dp"
+                        android:contentDescription="@string/todo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp">
+                        <TextView
+                            android:id="@+id/dummy_syllabusMine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
+                        <TextView
+                            android:id="@+id/syllabusDonateAdaptorMine"
+                            android:layout_toEndOf="@+id/dummy_syllabusMine"
+                            android:layout_width="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/colorBlack"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_toRightOf="@+id/dummy_syllabusMine" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/dummy_classMine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
+                        <TextView
+                            android:id="@+id/classDonateAdaptorMine"
+                            android:layout_toEndOf="@+id/dummy_classMine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:layout_toRightOf="@+id/dummy_classMine" />
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/descriptionDonateAdaptorMine"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:text=""/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp">
+                        <TextView
+                            android:id="@+id/dummy_free_paidMine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
+                        <TextView
+                            android:id="@+id/costDonateAdaptorMine"
+                            android:layout_toEndOf="@+id/dummy_free_paidMine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/colorPrimary"
+                            android:layout_toRightOf="@+id/dummy_free_paidMine" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/editImageViewMine"
+        android:visibility="gone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/edit_svg"
+        android:padding="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/todo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp" />
+    <ImageView
+        android:id="@+id/deleteImageViewMine"
+        android:visibility="gone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/delete_svg"
+        android:padding="5dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/todo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70dp" />
+    <ImageView
+        android:id="@+id/callImageViewMine"
+        android:visibility="gone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/call_svg"
+        android:padding="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/todo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp" />
+</RelativeLayout>

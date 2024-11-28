@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/top_logo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:background="@color/blue_color_code"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_app_logo" />
+        </LinearLayout>
+
+        <!--<View-->
+        <!--android:id="@+id/center_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/_1sdp"-->
+        <!--android:layout_centerInParent="true" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_logo_layout"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <LinearLayout
+                android:id="@+id/mobile_number_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/mobile_svg" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/usernameWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    app:hintTextAppearance="@style/hintText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:hint="Enter Mobile Number"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_15sdp"
+                        tools:text="8897873829" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/mobile_number_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/mobile_number_layout"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/login_button"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/forgot_pwd"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_curved_button"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/forgot_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_25sdp"
+                android:text="Forgot Password?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

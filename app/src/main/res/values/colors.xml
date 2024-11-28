@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4FB6BE</color>
+    <color name="colorPrimaryDark">#4FB6BE</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue_color_code">#4FB6BE</color>
+    <color name="gray_color">#f0f0f0</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_lock_top">#F1F2F6</color>
+    <color name="bg_lock_bottom">#EBEBEB</color>
+    <color name="light_gray">#d3d3d3</color>
+    <color name="daysLabelColor">#8A000000</color>
+    <color name="currentMonthDayColor">#de000000</color>
+    <color name="nextMonthDayColor">#1F000000</color>
+    <color name="black">#000000</color>
+    <color name="disabledDialogButtonColor">#1F000000</color>
+    <color name="green">#008000</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#F5B041</color>
+    <color name="itemHighlightColor">#1F000000</color>
+
+    <color name="defaultColor">#2962FF</color>
+    <color name="feed_back_top_left">#6377ec</color>
+    <color name="feed_back_top_right">#1ae7da</color>
+
+    <color name="support_top_left">#f451a4</color>
+    <color name="support_top_right">#fc7977</color>
+
+    <color name="profile_left_color_code">#41B5B5</color>
+    <color name="profile_right_color_code">#53D6A4</color>
+
+    <color name="holiday_color_code">#37bafe</color>
+    <color name="present_color_code">#009608</color>
+    <color name="absent_color_code">#d92201</color>
+    <color name="backGroundTextForMock">#F4F4F4</color>
+
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="white_transparent_text_sign">#40FFFFFF</color>
+    <color name="black_transparent_text_sign">#99000000</color>
+    <color name="viewColor">#D7DBDD</color>
+    <color name="ic_launcher_background">#4FB6BE</color>
+    <color name="pink">#FBE2E2</color>
+    <color name="lightgreen">#e3ffd7</color>
+    <color name="lightblue">#c8d7f7</color>
+
+
+
+</resources>

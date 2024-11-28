@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.ImageFullView"
+    tools:showIn="@layout/activity_image_full_view">
+
+
+    <LinearLayout
+        android:id="@+id/header_"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="6dp"
+        android:popupTheme="@style/AppTheme.PopupOverlay"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        tools:ignore="UnusedAttribute"
+        android:baselineAligned="false">
+
+
+    <LinearLayout
+            android:id="@+id/backLayoutFullImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/back_image_"
+                android:contentDescription="@string/todo"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IMAGE VIEW"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/downloadImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="4">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/back_image_"
+                android:contentDescription="@string/todo"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@id/header_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerFullImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </RelativeLayout>
+
+</RelativeLayout>

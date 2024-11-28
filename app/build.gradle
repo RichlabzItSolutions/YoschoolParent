@@ -1,0 +1,118 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 34
+    defaultConfig {
+        applicationId "com.yoskool.parent"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 9
+        versionName "1.8"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        // Enabling multidex support.
+        multiDexEnabled true
+        buildToolsVersion "30.0.3"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true;
+    }
+    sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/menu'] } }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+    google()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.soundcloud.android:android-crop:1.0.1@aar'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.0'
+    implementation 'androidx.navigation:navigation-ui:2.3.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.0'
+    implementation 'io.coil-kt:coil:0.11.0'
+    testImplementation 'junit:junit:4.12'
+
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.3.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'org.parceler:parceler-api:1.1.12'
+    annotationProcessor 'org.parceler:parceler:1.1.12'
+    //payment gateway integration
+    implementation 'com.razorpay:checkout:1.5.8'
+    //fcm
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.google.firebase:firebase-core:17.5.0'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    implementation 'com.annimon:stream:1.2.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.1.0'
+    implementation 'me.philio:pinentryview:1.0.6'
+//    implementation 'com.fxn769:pix:1.5.6'
+    //driver app dependences
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.6'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+    implementation 'com.karumi:dexter:6.2.0'
+    implementation 'com.intuit.sdp:sdp-android:1.1.1'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.github.GoodieBag:Pinview:v1.5'
+    implementation 'com.github.javiersantos:AppUpdater:2.7'
+    implementation 'com.google.firebase:firebase-crashlytics:18.2.4'
+    implementation 'com.google.firebase:firebase-analytics:20.0.0'
+    implementation 'io.github.sangcomz:fishbun:1.1.0'
+    implementation 'com.github.harsewaksingh13:Horizontal-Calendar:1.1.2'
+    implementation("com.vanniktech:android-image-cropper:4.5.0")
+
+
+}
+apply plugin: 'com.google.gms.google-services'
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url "https://www.jitpack.io" }
+}

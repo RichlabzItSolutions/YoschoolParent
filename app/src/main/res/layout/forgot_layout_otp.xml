@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewOtpToSentNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_your_otp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="5dp"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <EditText
+                    android:id="@+id/otpEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/enter_otp"
+                    android:maxLength="4"
+                    android:inputType="number"
+                    android:textColor="@color/colorBlack"
+                    tools:ignore="Autofill" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/viewColor" />
+
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="center">-->
+                <!--<com.goodiebag.pinview.Pinview-->
+                    <!--android:id="@+id/pinView"-->
+                    <!--android:focusable="false"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--app:pinWidth="40dp"-->
+                    <!--app:pinHeight="40dp"-->
+                    <!--app:pinLength="4"-->
+                    <!--app:cursorVisible="false"-->
+                    <!--app:forceKeyboard="true"-->
+                    <!--app:inputType="number"-->
+                    <!--app:password="false" />-->
+            <!--</LinearLayout>-->
+
+
+            <Button
+                android:id="@+id/verifyButtonChangeNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_profile"
+                android:text="@string/verify"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/didNotReceiveOtpText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="5dp"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

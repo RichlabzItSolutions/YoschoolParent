@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/viewColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/dummyFromDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="From Date :" />
+
+                            <TextView
+                                android:id="@+id/fromDateText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@+id/dummyFromDate"
+                                android:text=""
+                                android:textColor="@color/black" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|end">
+
+                            <TextView
+                                android:id="@+id/dummyToDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toStartOf="@+id/toDateText"
+                                android:text="To Date :" />
+
+                            <TextView
+                                android:id="@+id/toDateText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:text=""
+                                android:textColor="@color/black" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/imageViewAssignmentList"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+
+                    <TextView
+                        android:id="@+id/assignment_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/black" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:gravity="center|end">
+
+
+                        <TextView
+                            android:id="@+id/submitAssignmentText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:background="@drawable/submitassigmentbg"
+                            android:textSize="@dimen/_10sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:gravity="start"
+                            android:text="Submit Assignment"
+                            android:textColor="#000" />
+
+
+                        <TextView
+                            android:id="@+id/replyAssignmentText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:background="@drawable/viewassignmentbg"
+                            android:textSize="@dimen/_10sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_toRightOf="@id/viewAssignmentText"
+                            android:text="Teacher Reply"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/viewAssignmentText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:gravity="end"
+                            android:textSize="@dimen/_10sdp"
+                            android:padding="5dp"
+                            android:background="@drawable/viewbtnbg"
+                            android:text="View"
+                            android:textColor="#ED7633" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="25dp"
+                        android:visibility="gone">
+
+                        <ProgressBar
+                            android:id="@+id/progress_1"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:max="100"
+                            android:progress="30"
+                            android:progressDrawable="@drawable/progress_drawable" />
+
+                        <TextView
+                            android:id="@+id/progress_1_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@android:color/transparent"
+                            android:clickable="false"
+                            android:gravity="top"
+                            android:text="90%" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/date_text"
+                        android:text="Assignment1"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/date_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="May22"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13sdp"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/assignment_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:text="Assignment Type: Type"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/subject_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/assignment_text"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:text="Subject:Chemistry"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/last_date_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subject_text"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:text="Last Date: 14-06-2018"
+                        android:textColor="@android:color/black" />
+
+
+                    <TextView
+                        android:id="@+id/submitted_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/last_date_text"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:text="Submitted date: 14-06-2018"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <RelativeLayout
+                        android:id="@+id/submitted_text_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/last_date_text"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginRight="@dimen/_8sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_toStartOf="@+id/score_text"
+                                android:layout_toLeftOf="@+id/score_text"
+                                android:text="Submitted date: 14-06-2018"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_11sdp"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/score_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_11sdp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

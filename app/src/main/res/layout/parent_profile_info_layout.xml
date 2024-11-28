@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submit_button">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toStartOf="@+id/name_text_colon"
+                android:text="@string/name"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/name_text_colon"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:text=":"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/parentNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_toEndOf="@+id/name_text_colon">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/parentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/parent_name"
+                        android:inputType="textCapWords"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_15sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/name_selection_value"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_toEndOf="@+id/name_text_colon"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:id="@+id/mobile_number_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/name_text_colon"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_toStartOf="@+id/mobile_number_colon"
+                android:text="@string/mobile"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/mobile_number_colon"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/name_text_colon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:text=":"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/mobile_number_value"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/name_text_colon"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_toEndOf="@+id/mobile_number_colon"
+                android:textSize="@dimen/_14sdp" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/parentMobileNoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_below="@+id/name_text_colon"
+                android:layout_toEndOf="@+id/mobile_number_colon">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/parentMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/parent_no"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_15sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/updateButton"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/bg_button_profile"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_14sdp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_button"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/bg_button_profile"
+        android:text="@string/edit"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14sdp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.DonateBooksList"
+    tools:showIn="@layout/activity_donate_books_list">
+
+
+    <LinearLayout
+        android:id="@+id/header_"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="6dp"
+        android:popupTheme="@style/AppTheme.PopupOverlay"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        tools:ignore="UnusedAttribute"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/backLayoutDonateList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/back_image_" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/donateList"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/header_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/donateListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?attr/actionBarSize">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/donate_books"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="@string/donateBooks"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

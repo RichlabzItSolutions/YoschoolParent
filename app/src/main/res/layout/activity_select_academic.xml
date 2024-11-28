@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.SelectAcademic">
+
+    <LinearLayout
+        android:id="@+id/header_"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="6dp"
+        android:popupTheme="@style/AppTheme.PopupOverlay"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        tools:targetApi="lollipop">
+
+        <LinearLayout
+            android:id="@+id/back_layout_academic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:src="@drawable/back_image_"
+                android:contentDescription="@string/todo" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELECT ACADEMIC"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change your Accademic Year Here"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="70dp"
+            android:layout_below="@+id/tabls"
+            >
+            <TextView
+                android:id="@+id/title_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accademic Year:"
+                android:layout_margin="5dp"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/accademic_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:layout_margin="5dp"
+                    android:padding="2dp"
+                    android:background="@drawable/background_spinner"
+                    android:gravity="end"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:gravity="center"
+                    android:drawableTint="@color/colorBlack"
+                    app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="35dp"
+            >
+
+            <Button
+                android:id="@+id/button_saveaccademic"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Save"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

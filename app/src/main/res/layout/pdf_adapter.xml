@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/pdfLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+
+        <TextView
+            android:layout_toStartOf="@+id/buttonViewPdf"
+            android:id="@+id/pdfNameText"
+            android:layout_marginEnd="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Pdf One "/>
+
+
+        <!--<ImageView-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:src="@color/colorBlack"/>-->
+
+        <ImageView
+            android:id="@+id/buttonViewPdf"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="View Pdf"
+            android:src="@drawable/pdf"
+            android:textAllCaps="false"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/pdfLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="#DDDCDC"/>
+
+</RelativeLayout>

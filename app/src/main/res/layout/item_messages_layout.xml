@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/message_icon"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@+id/message_date_text"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_4sdp" />
+
+            <TextView
+                android:id="@+id/message_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textSize="@dimen/_12sdp"
+                tools:text="Jan 11 2019 8:45PM" />
+
+            <TextView
+                android:id="@+id/message_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_date_text"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_toRightOf="@+id/message_icon"
+                android:textSize="@dimen/_14sdp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

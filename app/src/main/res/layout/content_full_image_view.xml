@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.FullImageViewScreen"
+    tools:showIn="@layout/activity_full_image_view">
+
+
+    <LinearLayout
+        android:id="@+id/header_"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="6dp"
+        android:popupTheme="@style/AppTheme.PopupOverlay"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        tools:ignore="UnusedAttribute"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/backLayoutHolidaysList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/back_image_"
+                android:contentDescription="@string/todo"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/textHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <com.sangcomz.fishbun.util.TouchImageView
+        android:layout_below="@+id/header_"
+        android:id="@+id/fullImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/todo" />
+
+
+</RelativeLayout>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submit_button"
+        android:layout_marginBottom="@dimen/_8sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/class_selection_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toLeftOf="@+id/class_selection_colon"
+                android:text="@string/class_amp_selection"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/class_selection_colon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text=":"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/class_selection_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/class_selection_colon"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:id="@+id/gender_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/class_selection_colon"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toLeftOf="@+id/gender_colon"
+                android:text="Gender"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/gender_colon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/class_selection_colon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text=":"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/gender_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/class_selection_colon"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/gender_colon"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:id="@+id/mothers_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/gender_colon"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toLeftOf="@+id/mothers_name_colon"
+                android:text="@string/mothers_name"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/mothers_name_colon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender_colon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text=":"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/mothers_name_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender_colon"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/mothers_name_colon"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:id="@+id/religion_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/mothers_name_colon"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toLeftOf="@+id/religion_colon"
+                android:text="@string/religion_name"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/religion_colon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mothers_name_colon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text=":"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/religion_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mothers_name_colon"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/religion_colon"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:id="@+id/nationality_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/religion_colon"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toLeftOf="@+id/nationality_colon"
+                android:text="@string/Nationality_name"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/nationality_colon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/religion_colon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text=":"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/nationality_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/religion_colon"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/nationality_colon"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:id="@+id/date_of_joining_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/nationality_colon"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toLeftOf="@+id/date_of_joining_colon"
+                android:text="@string/date_of_joining"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/date_of_joining_colon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nationality_colon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text=":"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/date_of_joining_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nationality_colon"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/date_of_joining_colon"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:id="@+id/date_of_birth_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/date_of_joining_colon"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toLeftOf="@+id/date_of_birth_colon"
+                android:text="@string/date_of_birth"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/date_of_birth_colon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_of_joining_colon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text=":"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/date_of_birth_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_of_joining_colon"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/date_of_birth_colon"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/date_of_birth_colon"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toLeftOf="@+id/address_colon"
+                android:text="@string/address"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/address_colon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_of_birth_colon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text=":"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/address_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_of_birth_colon"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/address_colon"
+                android:ellipsize="end"
+                android:lines="3"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_button"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/bg_button_profile"
+        android:text="Edit"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14sdp" />
+</RelativeLayout>

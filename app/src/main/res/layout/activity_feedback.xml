@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/feed_back_desc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@drawable/bg_feed_back">
+
+        <ImageView
+            android:id="@+id/feed_back_icon"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_feedback" />
+
+        <TextView
+            android:id="@+id/feed_back_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feed_back_icon"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="@string/feel_free_to_share_your_feedback_about_our_school"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/feed_back_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@+id/feed_back_desc_layout"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/bg_line_edit"
+        android:gravity="top"
+        android:hint="Write here"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:textSize="@dimen/_14sdp" />
+
+    <Button
+        android:id="@+id/submit_button"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/bg_button_feed_back"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14sdp" />
+
+
+</RelativeLayout>

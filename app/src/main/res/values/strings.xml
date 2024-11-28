@@ -1,0 +1,145 @@
+<resources>
+    <array name="material_calendar_months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+    <!--<string name="api_key">rzp_test_aCFpgMasEnYQos</string>-->
+    <string name="app_name">YOSKOOL Parent</string>
+    <string name="api_key">rzp_live_oojVFOfuTnH0RT</string>
+    <string name="default_notification_channel_id" translatable="false">Main</string>
+    <string name="material_calendar_monday">M</string>
+    <string name="material_calendar_tuesday">T</string>
+    <string name="material_calendar_wednesday">W</string>
+    <string name="material_calendar_thursday">T</string>
+    <string name="material_calendar_friday">F</string>
+    <string name="material_calendar_saturday">S</string>
+    <string name="material_calendar_sunday">S</string>
+    <string name="mothers_name">Mother\'s Name</string>
+    <string name="religion_name">Religion</string>
+    <string name="Nationality_name">Nationality</string>
+    <string name="date_of_joining">Date of joining</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="address">Address</string>
+    <string name="edit">Edit</string>
+    <string name="material_calendar_today_button">Today</string>
+    <string name="material_calendar_positive_button">OK</string>
+    <string name="material_calendar_negative_button">Cancel</string>
+    <string name="feel_free_to_share_your_feedback_about_our_school">Feel free to share your Feedback about our School</string>
+    <string name="we_are_here_to_help_you_submit_your_query">We are here to help you, submit your Query</string>
+    <string name="class_amp_selection"><![CDATA[Class & Selection]]></string>
+    <string name="title_activity_payment_screen">PaymentScreen</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_class_routine">ClassRoutine</string>
+    <string name="unexpectedError">Unexpected error occurred please try again</string>
+    <string name="cancel">Cancel</string>
+    <string name="donateBooks">DONATE BOOKS</string>
+    <string name="donateList">DONATE LIST</string>
+    <string name="loading_title">YOSCHOOL Parent</string>
+    <string name="update">UPDATE</string>
+    <string name="choose_file">Choose file</string>
+    <string name="pleaseSelectSyllabus">Please select syllabus </string>
+    <string name="enterDescription">Enter description</string>
+    <string name="enterAmount">Enter amount</string>
+    <string name="checkPaymentMode">Click payment mode</string>
+    <string name="select_subjects">Select Subjects</string>
+    <string name="description">Description</string>
+    <string name="status">Status</string>
+    <string name="free">Free</string>
+    <string name="internalServerError">Internal Server error try again</string>
+    <string name="cash">Cash</string>
+    <string name="paid">Paid</string>
+    <string name="donateFor">Donate for :</string>
+    <string name="amount">Amount : ₹</string>
+    <string name="other_amount">Other amount ( if any ) ₹ </string>
+    <string name="submit">SUBMIT</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_donate_books_list">DonateBooksList</string>
+    <string name="title_activity_donate_books">DonateBooksActivity</string>
+    <string name="title_activity_pdf">PdfActivity</string>
+    <string name="title_activity_time_table">TimeTable</string>
+    <string name="title_activity_exams">ExamsActivity</string>
+    <string name="title_activity_bus_tracking">BusTracking</string>
+    <string name="title_activity_proress_card">ProressCard</string>
+    <string name="title_activity_holidays_list_screen">HolidaysListScreen</string>
+    <string name="google_key">AIzaSyDSpzCpiJfj3UmDZnyn_bo02VMhEPdorm4</string>
+    <string name="unexpected_error">Unexpected error please try again</string>
+    <!--<string name="google_key">AIzaSyBC6D7Dp9TwHTvF9GWyi9T4-QY_VCLfflM</string>-->
+    <!--<string name="google_key_directions">AIzaSyAciZRAJJDxPjkUWh1Gqvpb05VF6YKO-tw</string>-->
+    <string name="title_activity_full_image_view">FullImageView</string>
+    <string name="title_activity_vaccine">Vaccine</string>
+    <string name="vaccination">VACCINATION</string>
+    <string name="student_name">Student Name</string>
+    <string name="roll_number">Roll Number</string>
+    <string name="class_amp_section"><![CDATA[Class & Section]]></string>
+    <string name="gender">Gender</string>
+    <string name="mother_s_name">Mother\'s name</string>
+    <string name="religion">Religion</string>
+    <string name="nationality">Nationality</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="date_of_birth_">Date of Birth</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="parent_name">Parent Name</string>
+    <string name="parent_no">Parent No</string>
+    <string name="noInternet">No internet connection on your device. Would you like to enable it?</string>
+    <string name="noInternetConnection">No Internet Connection</string>
+    <string name="verify">Verify</string>
+    <string name="enter_your_otp">Enter your otp</string>
+    <string name="enter_otp">Enter Otp</string>
+    <string name="call_driver">call driver</string>
+    <string name="title_activity_online_classes">OnlineClassesActivity</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_web_view_online">WebViewOnlineActivity</string>
+    <string name="loading_message">Loading.....</string>
+    <string name="title_activity_submit_assignment">SubmitAssignmentActivity</string>
+    <string name="title_activity_add_assignment">AddAssignmentActivity</string>
+    <string-array name="support_array">
+        <item>Your free time to call</item>
+        <item>12 AM</item>
+        <item>1 AM</item>
+        <item>2 AM</item>
+        <item>3 AM</item>
+        <item>4 AM</item>
+        <item>5 AM</item>
+        <item>6 AM</item>
+        <item>7 AM</item>
+        <item>8 AM</item>
+        <item>9 AM</item>
+        <item>10 AM</item>
+        <item>11 AM</item>
+        <item>12 AM</item>
+        <item>1 PM</item>
+        <item>2 PM</item>
+        <item>3 PM</item>
+        <item>4 PM</item>
+        <item>5 PM</item>
+        <item>6 PM</item>
+        <item>7 PM</item>
+        <item>8 PM</item>
+        <item>9 PM</item>
+        <item>10 PM</item>
+        <item>11 PM</item>
+
+    </string-array>
+
+
+</resources>

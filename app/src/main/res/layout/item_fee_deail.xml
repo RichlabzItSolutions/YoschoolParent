@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp">
+
+        <TextView
+            android:id="@+id/fee_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/price_text"
+            android:text="14-06-2018"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:text="40.00"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/paid_amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price_text"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_toLeftOf="@+id/paid_amount_value_text"
+            android:text="Paid:"
+            android:textColor="@color/daysLabelColor"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/paid_amount_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price_text"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_toLeftOf="@+id/balance_amount_text"
+            android:maxLength="9"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/balance_amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price_text"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_toLeftOf="@+id/balance_amount_value_text"
+            android:text="Balance:"
+            android:textColor="@color/daysLabelColor"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/balance_amount_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/price_text"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:maxLength="9"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_13sdp" />
+    </RelativeLayout>
+</layout>

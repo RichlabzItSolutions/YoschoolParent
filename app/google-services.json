@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "898367742981",
+    "firebase_url": "https://yoskool.firebaseio.com",
+    "project_id": "yoskool",
+    "storage_bucket": "yoskool.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898367742981:android:1a51da3c5ab9522bb7a86c",
+        "android_client_info": {
+          "package_name": "com.yoskool.parent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898367742981-emvk93l6oggecksnib21p9jeq5fl1q5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByQasegs-7xyyORNxxvy9skMaCPiLOy4E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898367742981-emvk93l6oggecksnib21p9jeq5fl1q5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898367742981:android:50dddff293e27529b7a86c",
+        "android_client_info": {
+          "package_name": "com.yoskool.teacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898367742981-emvk93l6oggecksnib21p9jeq5fl1q5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByQasegs-7xyyORNxxvy9skMaCPiLOy4E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898367742981-emvk93l6oggecksnib21p9jeq5fl1q5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

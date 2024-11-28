@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/student_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+
+                <ImageView
+                    android:id="@+id/student_img"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/todo" />
+
+                <LinearLayout
+                    android:id="@+id/student_info_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/student_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/student_school_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/student_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/student_info_layout"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/student_options_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_4sdp" />
+
+            </ScrollView>
+
+        </RelativeLayout>
+</layout>
